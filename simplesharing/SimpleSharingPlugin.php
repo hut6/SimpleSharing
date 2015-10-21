@@ -33,6 +33,7 @@ class SimpleSharingPlugin extends BasePlugin
 		// check we have a admin user as we don't want to the js to run anywhere but when an admin is logged in
 		if ( craft()->userSession->isLoggedIn() && craft()->userSession->isAdmin() ) {
 			craft()->templates->includeJsResource("simplesharing/js/simple_sharing.js");
+			craft()->templates->includeCssResource("simplesharing/css/simple_sharing.css");
 		}
 	}
 

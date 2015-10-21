@@ -10,6 +10,8 @@ if(id != null) {
   }).responseText;
 
   if(uri) {
+    $('#simple-sharing').remove();
+
     $("#settings").append(
       '<div id="simple-sharing" class="field" style="margin-top: 50px">' +
         '<div class="heading">' +
