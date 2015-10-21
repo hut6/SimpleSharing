@@ -10,15 +10,20 @@ class SimpleSharingController extends BaseController
 
 		$data = craft()->request->getQuery();
 
-		$attr = [
-			"id" => $data["id"]
-		];
+		$allowedSections = craft()->plugins->getPlugin("SimpleSharing")->getSettings()->allowedSections;
 
-		$criteria = craft()->elements->getCriteria(ElementType::Entry, $attr);
+		if (!$allowedSections or (is_array($allowedSections) and in_array($data['sectionId'], $allowedSections))) {
+			$attr = [
+				"id" => $data["id"]
+			];
 
-		$entry = $criteria->first();
-		if($entry->url) {
-			echo $entry->url;
+			$criteria = craft()->elements->getCriteria(ElementType::Entry, $attr);
+
+			$entry = $criteria->first();
+			if($entry->url) {
+				echo $entry->url;
+			}
+
 		}
 
 		craft()->end();
