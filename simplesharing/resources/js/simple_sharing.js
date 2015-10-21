@@ -1,14 +1,15 @@
 
 var id = $("input[name='entryId']").val();
+var sectionId = $("input[name='sectionId']").val();
 
 if(id != null) {
   var uri = $.ajax({
     type: "GET",
-    url: "/_simple_sharing_url?id=" + id,
+    url: "/_simple_sharing_url?id=" + id + "&sectionId=" + sectionId,
     async: false
   }).responseText;
 
-  if(uri != null) {
+  if(uri) {
     $("#settings").append(
       '<div id="simple-sharing" class="field" style="margin-top: 50px">' +
         '<div class="heading">' +

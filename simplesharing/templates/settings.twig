@@ -1,0 +1,11 @@
+{% import "_includes/forms" as forms %}
+
+{{ forms.multiselectField({
+	label: "Allowed Sections"|t,
+	id: 'allowedSections',
+	name: 'allowedSections',
+	instructions: "Choose which sections the simple sharing links will show. Leave blank for all sections"|t,
+	values: settings.allowedSections,
+	options: options,
+	first: true,
+}) }}
