@@ -1,4 +1,4 @@
-# Simple Sharing 1.0.0
+# Simple Sharing 1.1.0
 
 Simple Sharing is a CraftCMS plugin that generates social media share links within 
 the Craft CP page, allowing you to quickly and easily share entries.
@@ -12,5 +12,9 @@ the Craft CP page, allowing you to quickly and easily share entries.
 
 ## Updates
 
-* 1.0
+* 1.1.0
+	* Added sharing link using Twig variable (See issue #2)
+	* Added releases.json
+	* Refactored codebase
+* 1.0.0
 	* Initial release

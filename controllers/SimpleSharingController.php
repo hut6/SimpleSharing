@@ -1,4 +1,5 @@
-<?php namespace Craft;
+<?php
+namespace Craft;
 
 class SimpleSharingController extends BaseController
 {
@@ -27,6 +28,5 @@ class SimpleSharingController extends BaseController
 		}
 
 		craft()->end();
-
 	}
 }
