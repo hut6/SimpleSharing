@@ -1,5 +1,13 @@
 [
     {
+        "version": "1.1.2",
+        "downloadUrl": "https://github.com/hut6/simplesharing/archive/master.zip",
+        "date": "2016-10-29T11:35:00+09:30",
+        "notes": [
+            "[Added] Added LICENSE.txt"
+        ]
+    },
+    {
         "version": "1.1.1",
         "downloadUrl": "https://github.com/hut6/simplesharing/archive/master.zip",
         "date": "2016-10-29T11:30:00+09:30",
