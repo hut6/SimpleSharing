@@ -5,7 +5,7 @@ var sectionId = $("input[name='sectionId']").val();
 if(id != null) {
   var uri = $.ajax({
     type: "GET",
-    url: "/_simple_sharing_url?id=" + id + "&sectionId=" + sectionId,
+    url: "/actions/simpleSharing/url?id=" + id + "&sectionId=" + sectionId,
     async: false
   }).responseText;
 

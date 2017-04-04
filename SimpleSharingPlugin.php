@@ -52,13 +52,6 @@ class SimpleSharingPlugin extends BasePlugin
 		}
 	}
 
-	public function registerSiteRoutes()
-	{
-		return array(
-			'_simple_sharing_url' => array('action' => 'simpleSharing/url'),
-		);
-	}
-
 	public function getSettingsHtml()
 	{
 		$sections = craft()->sections->getAllSections("id");
