@@ -15,7 +15,7 @@ class SimpleSharingPlugin extends BasePlugin
 
     public function getVersion()
     {
-        return '1.1.4';
+        return '1.1.5';
     }
 
     public function getDeveloper()
@@ -46,7 +46,7 @@ class SimpleSharingPlugin extends BasePlugin
     }
 
 	function init() {
-		if (craft()->userSession->isLoggedIn() && craft()->userSession->isAdmin() ) {
+		if (craft()->request->isCpRequest() && craft()->userSession->isLoggedIn() && craft()->userSession->isAdmin() ) {
 			craft()->templates->includeJsResource("simplesharing/js/simple_sharing.js");
 			craft()->templates->includeCssResource("simplesharing/css/simple_sharing.css");
 		}

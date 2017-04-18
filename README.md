@@ -12,6 +12,8 @@ the Craft CP page, allowing you to quickly and easily share entries.
 
 ## Updates
 
+* 1.1.5
+	* Only include CSS & JS resources in CP requests
 * 1.1.4
 	* Fixed 'URL not found' route issue reported by @strohrdanz (See issue #3)
 * 1.1.3
