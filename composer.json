@@ -1,0 +1,54 @@
+{
+    "name": "hut6/simplesharing",
+    "description": "Simple Sharing generates social media share links within CP entry pages, allowing you to quickly & easily share entries.",
+    "type": "craft-plugin",
+    "version": "2.0.0",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "simplesharing",
+        "instagram",
+        "twitter",
+        "facebook"
+    ],
+    "support": {
+        "docs": "https://github.com/hut6/simplesharing/blob/master/README.md",
+        "issues": "https://github.com/hut6/simplesharing/issues"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "reganlawton",
+            "homepage": "https://github.com/reganlawton"
+        },
+        {
+            "name": "hutsix",
+            "homepage": "https://hutsix.com.au"
+        }
+    ],
+    "require": {
+        "craftcms/cms": "~3.0.0-beta.23"
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+          "hut6\\simplesharing\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "SimpleSharing",
+        "handle": "simple-sharing",
+        "schemaVersion": "2.0.0",
+        "hasCpSettings": true,
+        "hasCpSection": false,
+        "changelogUrl": "https://raw.githubusercontent.com/hut6/simplesharing/master/CHANGELOG.md",
+        "class": "hut6\\simplesharing\\SimpleSharing"
+    }
+}
