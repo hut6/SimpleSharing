@@ -1,0 +1,24 @@
+{#
+/**
+ * SimpleSharing plugin for Craft CMS 3.x
+ *
+ * SimpleSharing Settings.twig
+ *
+ * @author    reganlawton
+ * @copyright Copyright (c) 2017 reganlawton
+ * @link      https://hutsix.com.au
+ * @package   SimpleSharing
+ * @since     2.0.0
+ */
+#}
+
+{% import "_includes/forms" as forms %}
+
+{{ forms.multiselectField({
+    label: "Allowed Sections"|t,
+    instructions: "Choose which sections the simple sharing links will show. Leave blank for all sections"|t,
+    id: 'allowedSections',
+    name: 'allowedSections',
+    values: settings['allowedSections'],
+    options: options,
+}) }}

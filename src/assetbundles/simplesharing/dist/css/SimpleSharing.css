@@ -1,0 +1,16 @@
+/**
+ * SimpleSharing plugin for Craft CMS
+ *
+ * SimpleSharing CSS
+ *
+ * @author    reganlawton
+ * @copyright Copyright (c) 2017 reganlawton
+ * @link      https://hutsix.com.au
+ * @package   SimpleSharing
+ * @since     2.0.0
+ */
+
+#settings-allowedSections {
+    min-height: 100px;
+    min-width: 250px;
+}
