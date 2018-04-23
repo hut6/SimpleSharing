@@ -17,8 +17,11 @@ if(id != null) {
   var uri = $.ajax({
     type: "GET",
     url: "/actions/simple-sharing/default/url?id=" + id + "&sectionId=" + sectionId,
-    async: false
-  }).responseText;
+    async: true
+  }).done(function(res) {
+    console.log(res);
+  });
+
 
   if(uri) {
     $('#simple-sharing').remove();

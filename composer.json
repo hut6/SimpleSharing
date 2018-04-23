@@ -2,7 +2,7 @@
     "name": "hut6/simplesharing",
     "description": "Simple Sharing generates social media share links within CP entry pages, allowing you to quickly & easily share entries.",
     "type": "craft-plugin",
-    "version": "2.0.0",
+    "version": "2.0.1",
     "keywords": [
         "craft",
         "cms",

@@ -34,18 +34,16 @@ class DefaultController extends Controller
 
     public function actionUrl()
     {
-        $data = Craft::$app->request->getQueryParams();
-
+        $data            = Craft::$app->request->getQueryParams();
         $allowedSections = SimpleSharing::getInstance()->getSettings()->allowedSections;
 
         if (!$allowedSections or (is_array($allowedSections) and in_array($data['sectionId'], $allowedSections))) {
             /** @var Entry|null $entry */
             $entry = Craft::$app->getEntries()->getEntryById($data['id']);
 
-            if(null !== $entry) {
+            if (null !== $entry) {
                 echo $entry->url;
             }
-
         }
 
         Craft::$app->end();

@@ -1,5 +1,10 @@
 # SimpleSharing Changelog
 
+## 2.0.1 - 2018-04-23
+
+### Fixed
+- Resolved issue where linked werent showing due to wrong sectionId value
+
 ## 2.0.0 - 2017-11-26
 
 ### Added

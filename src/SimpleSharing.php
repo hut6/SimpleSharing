@@ -129,7 +129,7 @@ class SimpleSharing extends Plugin
         $options = [];
 
         foreach ($sections as $id => $section) {
-            $options[$id] = $section->name;
+            $options[$section->id] = $section->name;
         }
         return Craft::$app->view->renderTemplate(
             'simple-sharing/settings',
